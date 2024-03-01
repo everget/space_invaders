@@ -1,0 +1,66 @@
+* {
+	outline: none;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: Helvetica, serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: #040406;
+}
+
+.game-container {
+	margin: 20px auto 0;
+	width: 600px;
+	text-align: center;
+}
+
+.game-sound {
+	display: none;
+	height: 0;
+}
+
+.game-indicator {
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.game-indicator--left {
+	float: left;
+	visibility: hidden;
+}
+
+.game-indicator--right {
+	float: right;
+}
+
+#game-canvas {
+	display: block;
+	width: 100%;
+	height: 600px;
+}
+
+@media screen and (max-width: 600px) {
+	.game-container {
+		margin: 45% auto 0;
+		width: 480px;
+	}
+
+	#game-canvas {
+		height: 480px;
+	}
+}
